@@ -1,3 +1,6 @@
+/* ".abc" is button; "#abc" is ID */
+/* ID is specific to ONE HTML page */
+
 button.subscribe {
     background-color: #b60402;
     color: white;
@@ -101,4 +104,17 @@ button.save {
     padding-left: 20px;
     padding-right: 20px;
     font-weight: bold;
+}
+
+#bigbutton {
+    font-size: 20px;
+}
+
+#red {
+    color: red;
+}
+
+.setbg {
+    background-image: url("images/images.png");
+    background-size: contain;
 }
