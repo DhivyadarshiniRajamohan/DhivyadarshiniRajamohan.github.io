@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @media screen and (max-width: 600px) {
+            .parent {
+                align-content: center;
+                flex-direction: column;
+            }
+
+            .column2 {
+                width: 100%;
+                background-size: contain;
+                flex: 1;
+                background: fixed;
+                display: block;
+                z-index: 1;
+            }
+
+            .column1 {
+                display: block;
+                position: relative;
+                flex: 1;
+            }
+        }
+
+        .parent {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .column1 {
+            flex: 1;
+            background-color: white;
+            padding: 5px;
+            width: 200px;
+        }
+
+        .column2 {
+            flex: 1;
+            display: block;
+            background-size: contain;
+            width: 200px;
+            background-repeat: no-repeat;
+            padding: 5px;
+        }
+
+        h1 {
+            font-family: "Crimson Text", serif;
+        }
+
+        p {
+            font-family: sans-serif;
+        }
+
+        button {
+            background-color: #c3bcb3;
+            border: solid 2px #c3bcb3;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+            color: white;
+            font-family: "Crimson Text", serif;
+        }
+
+        .responsive {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="column1">
+            <h1>Elevate your style, embrace timeless elegance.</h1>
+            <p>Discover a world of exquisite craftsmanship and unparalleled beauty with our stunning collection of fine
+                jewelry. Each piece is meticulously designed to capture the essence of grace and sophistication,
+                reflecting your unique sense of style</p>
+            <button>view catalog</button>
+        </div>
+        <div class="column2">
+            <img src="images/lady.jpg" class="responsive">
+        </div>
+    </div>
+
+</body>
+
+</html>
