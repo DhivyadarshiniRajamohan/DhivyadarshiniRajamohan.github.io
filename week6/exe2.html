@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 2</title>
+    <style>
+        header {
+            max-width: 600px;
+            background-color: #333333;
+            height: 80px;
+            align-content: center;
+            font-family: sans-serif;
+        }
+
+        .logo {
+            display: block;
+            height: 60px;
+            margin-right: auto;
+        }
+
+        .navbar {
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            justify-content: space-between;
+            display: flex;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .submenu a {
+            display: block;
+            text-align: left;
+            background-color: #333333;
+            height: 30px;
+            align-content: center;
+        }
+
+        .submenu a:hover {
+            background-color: #575757;
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        .arrow {
+            height: 10px;
+        }
+
+        .icon {
+            height: 15px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div><img src="images/purrfacts2.png" class="logo"></div>
+            <div class="menu">
+                <img src="images/home.png" class="icon">
+                <a href="#">Home</a>
+                <div class="menu-item">
+                    <img src="images/info.png" class="icon">
+                    <a href="#">About</a>
+                    <img src="images/down-arrow.png" class="arrow">
+                    <div class="submenu">
+                        <a href="#">Mission</a>
+                        <a href="#">Vision</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/settings.png" class="icon">
+                    <a href="#">Services</a>
+                    <img src="images/down-arrow.png" class="arrow">
+                    <div class="submenu">
+                        <a href="#">Web Development</a>
+                        <a href="#">App Development</a>
+                        <a href="#">SEO Services</a>
+                    </div>
+                </div>
+                <img src="images/phone.png" class="icon">
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
